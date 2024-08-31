@@ -9,9 +9,9 @@ class Solution {
         StringBuilder reverseString = new StringBuilder();
     
         for(int i=listLen-1;i>=0;i--){
-            if(wordList[i].equals(" ")||wordList[i].equals("")) continue;
+            if (wordList[i].equals(" ") || wordList[i].equals("")) continue;
             if (!reverseString.isEmpty()) reverseString.append(" ");
-            reverseString.append(wordList[i].replaceAll("\\s+", ""));
+            reverseString.append(wordList[i]);
         }
         
         return reverseString.toString();
