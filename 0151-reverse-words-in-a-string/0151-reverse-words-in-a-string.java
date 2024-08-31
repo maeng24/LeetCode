@@ -9,7 +9,7 @@ class Solution {
         StringBuilder reverseString = new StringBuilder();
     
         for(int i=listLen-1;i>=0;i--){
-            if (wordList[i].equals(" ") || wordList[i].equals("")) continue;
+            if (wordList[i].isBlank()) continue;
             if (!reverseString.isEmpty()) reverseString.append(" ");
             reverseString.append(wordList[i]);
         }
